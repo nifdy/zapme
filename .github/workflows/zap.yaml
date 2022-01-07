@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Scan ZAP website
     steps:
-      - name: ZAP Scan
+      - name: ZAP Scan O
         uses: zaproxy/action-baseline@v0.6.1
         with:
           target: 'https://www.ogeedata.com'
