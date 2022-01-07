@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: '27 21 * * *'
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan ZAP website
+    steps:
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@v0.6.1
+        with:
+          target: 'https://troop16kc.org'
