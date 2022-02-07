@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: '27 21 * * 0'
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan pogee website
+    steps:
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@v0.6.1
+        with:
+          target: 'https://www.pedogee.com'
