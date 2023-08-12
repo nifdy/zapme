@@ -9,6 +9,6 @@ jobs:
     name: Scan ZAP website
     steps:
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.6.1
+        uses: zaproxy/action-baseline@v0.9.0
         with:
-          target: 'https://6sense.com'
+          target: 'https://login.6sense.com'
