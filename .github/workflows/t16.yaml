@@ -11,4 +11,4 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
         with:
-          target: 'https://troop16kc.org'
+          target: 'https://6sense.com'
